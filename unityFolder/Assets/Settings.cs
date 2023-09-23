@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
+using TMPro;
 
 public class Settings : MonoBehaviour
 {
@@ -12,7 +13,7 @@ public class Settings : MonoBehaviour
 
     Resolution[] rsl;
     List<string> resolutions;
-    public Dropdown dropdown;
+    public TMPro.TMP_Dropdown dropdown;
 
     public void FullScreenToggle()
     {
