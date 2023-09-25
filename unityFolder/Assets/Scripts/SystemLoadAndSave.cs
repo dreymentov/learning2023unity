@@ -6,11 +6,15 @@ using UnityEngine;
 public class SystemLoadAndSave : MonoBehaviour
 {
     public Vector3 playerPos3system;
+    public float speedLS;
+    public Color matShpereLS; 
 
     public void ToSaveJSON()
     {
         PlayerData playerData = new PlayerData();
         playerData.playerPos3 = GetComponent<Sphere>().player.transform.position;
+        playerData.speedPD = GetComponent<Sphere>().speed;
+        playerData.matSpherePD = GetComponent<Sphere>().v3color;
 
         string json = JsonUtility.ToJson(playerData, true);
         File.WriteAllText(Application.dataPath + "/PlayerDataFile.json", json);
@@ -22,5 +26,7 @@ public class SystemLoadAndSave : MonoBehaviour
         PlayerData data = JsonUtility.FromJson<PlayerData>(json);
 
         playerPos3system = data.playerPos3;
+        speedLS = data.speedPD;
+        matShpereLS = data.matSpherePD;
     }
 }

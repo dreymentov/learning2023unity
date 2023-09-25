@@ -535,6 +535,7 @@ MonoBehaviour:
   rb: {fileID: 1922685471}
   speed: 500
   player: {fileID: 1922685470}
+  material: {fileID: 2100000, guid: 43dcd7d7b33d3294d81e75ec81189312, type: 2}
 --- !u!114 &1922685477
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,7 +548,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ca783d78658124641b6fffff5f2f59ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos3: {x: 0, y: 0, z: 0}
+  playerPos3system: {x: 0, y: 0, z: 0}
+  speedLS: 0
+  matShpereLS: {fileID: 2100000, guid: 43dcd7d7b33d3294d81e75ec81189312, type: 2}
 --- !u!1 &1992946325
 GameObject:
   m_ObjectHideFlags: 0
