@@ -25,6 +25,7 @@ public class Sphere : MonoBehaviour
 
         player.transform.position = startLoading.playerPos3system;
         speed = startLoading.speedLS;
+        v3color = startLoading.matShpereLS;
         materialRD.material.color = v3color;
     }
     private void Update()
