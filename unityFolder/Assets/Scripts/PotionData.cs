@@ -7,13 +7,13 @@ using UnityEngine;
 public class PotionData : ScriptableObject
 {
     [SerializeField]
-    private string potionName;
+    public string potionName;
     [SerializeField]
-    private string description;
+    public string description;
     [SerializeField]
-    private Sprite icon;
+    public Sprite icon;
     [SerializeField]
-    private int goldCost;
+    public int goldCost;
 
     public string PotionName
     {

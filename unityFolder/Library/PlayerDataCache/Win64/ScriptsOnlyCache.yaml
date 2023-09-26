@@ -1,7 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - Inventory
+    - InventoryWindow
     - MenuControls
+    - PotionData
     - Settings
     - Sphere
     - SystemLoadAndSave
@@ -25,6 +28,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Button
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.GridLayoutGroup
     - UnityEngine.UI.Image
     - UnityEngine.UI.LayoutElement
     - UnityEngine.UI.Mask
@@ -66,9 +70,23 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 3722}
+      Script: {instanceID: 1476}
     - Class: 114
-      Script: {instanceID: 4062}
+      Script: {instanceID: 2184}
+    - Class: 114
+      Script: {instanceID: 2334}
+    - Class: 114
+      Script: {instanceID: 2366}
+    - Class: 114
+      Script: {instanceID: 2620}
+    - Class: 114
+      Script: {instanceID: 3068}
+    - Class: 114
+      Script: {instanceID: 3728}
+    - Class: 114
+      Script: {instanceID: 4070}
+    - Class: 114
+      Script: {instanceID: 4484}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -76,6 +94,14 @@ ScriptsOnlyBuild:
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     Assets/Scenes/Menu.unity:
     - Class: 1
@@ -115,37 +141,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 2034}
     - Class: 114
-      Script: {instanceID: 2332}
+      Script: {instanceID: 2334}
     - Class: 114
-      Script: {instanceID: 2448}
+      Script: {instanceID: 2452}
     - Class: 114
-      Script: {instanceID: 2458}
+      Script: {instanceID: 2462}
     - Class: 114
-      Script: {instanceID: 2490}
+      Script: {instanceID: 2494}
     - Class: 114
-      Script: {instanceID: 2616}
+      Script: {instanceID: 2620}
     - Class: 114
-      Script: {instanceID: 2800}
+      Script: {instanceID: 2804}
     - Class: 114
-      Script: {instanceID: 2810}
+      Script: {instanceID: 2814}
     - Class: 114
-      Script: {instanceID: 2888}
+      Script: {instanceID: 2892}
     - Class: 114
-      Script: {instanceID: 3056}
+      Script: {instanceID: 3060}
     - Class: 114
-      Script: {instanceID: 3150}
+      Script: {instanceID: 3156}
     - Class: 114
-      Script: {instanceID: 3626}
+      Script: {instanceID: 3632}
     - Class: 114
-      Script: {instanceID: 3744}
+      Script: {instanceID: 3750}
     - Class: 114
-      Script: {instanceID: 3760}
+      Script: {instanceID: 3766}
     - Class: 114
-      Script: {instanceID: 3856}
+      Script: {instanceID: 3864}
     - Class: 114
-      Script: {instanceID: 3888}
+      Script: {instanceID: 3896}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 4136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -297,6 +323,12 @@ ScriptsOnlyBuild:
     className: RawImage
   - hash:
       serializedVersion: 2
+      Hash: ecaeb9c4991d0d8fd58ba134da410cce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Inventory
+  - hash:
+      serializedVersion: 2
       Hash: 4f60ff347d4efee4ef8cc7f627735018
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
@@ -313,6 +345,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TextMeshSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: de10188032e9c899f9aa7892ff065730
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: InventoryWindow
   - hash:
       serializedVersion: 2
       Hash: 27e5341178f188b89bdc6495710b590c
@@ -481,6 +519,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Settings
+  - hash:
+      serializedVersion: 2
+      Hash: 1148815a5837ef303e276d06bcb99574
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PotionData
   - hash:
       serializedVersion: 2
       Hash: caa533b001ae39b864ba8425019e2268
@@ -679,6 +723,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: 4b419f8df675ba71ccd4def7b47348cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Potion
   - hash:
       serializedVersion: 2
       Hash: 87ad3705a58f19c47136728d4a6e9c47

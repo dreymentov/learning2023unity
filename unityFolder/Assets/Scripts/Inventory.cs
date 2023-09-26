@@ -1,23 +1,32 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Inventory : MonoBehaviour
 {
-    [SerializeField] List<PotionData> StartItems = new List<PotionData>();
+    [SerializeField] public Sprite[] slots;
 
-    public  List<PotionData> InventoryItems = new List<PotionData>();
+    public List<PotionData> items = new List<PotionData>();
 
-    void Start()
+    private void Start()
     {
-        for (var i = 0; i < StartItems.Count; i++)
+        for (int i = 0; i < items.Count; i++)
         {
-            AddItem(StartItems[i]);
+            AddItemToInventory(items[i]);
         }
     }
 
-    public void AddItem(PotionData Potion)
+    public void AddItemToInventory(PotionData item)
     {
-        InventoryItems.Add(Potion);
+        for (int i = 0; i < slots.Length; i++)
+        {
+            if (slots[i] == null)
+            {
+                items.Add(item);
+                slots[i] = item.icon;
+                return;
+            }
+        }
     }
 }
