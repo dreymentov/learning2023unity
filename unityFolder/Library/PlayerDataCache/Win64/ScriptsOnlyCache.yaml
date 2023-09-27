@@ -4,10 +4,17 @@ ScriptsOnlyBuild:
     - Inventory
     - InventoryWindow
     - MenuControls
+    - NPC_TheBlueCube
     - PotionData
     - Settings
     - Sphere
     - SystemLoadAndSave
+    Unity.Recorder.Editor.dll:
+    - UnityEditor.Recorder.MovieRecorderEditor
+    - UnityEditor.Recorder.MovieRecorderSettings
+    - UnityEditor.Recorder.RecorderControllerSettings
+    - UnityEditor.Recorder.RecorderSettingsPrefsEditor
+    - UnityEditor.Recorder.RecorderWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -70,24 +77,32 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1476}
+      Script: {instanceID: 1502}
     - Class: 114
-      Script: {instanceID: 2184}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 2258}
     - Class: 114
-      Script: {instanceID: 2366}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2450}
     - Class: 114
-      Script: {instanceID: 3068}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 3728}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 4070}
+      Script: {instanceID: 3222}
     - Class: 114
-      Script: {instanceID: 4484}
+      Script: {instanceID: 3940}
+    - Class: 114
+      Script: {instanceID: 4326}
+    - Class: 114
+      Script: {instanceID: 4696}
+    - Class: 114
+      Script: {instanceID: 4774}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 135
       Script: {instanceID: 0}
@@ -129,49 +144,49 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1476}
+      Script: {instanceID: 1502}
     - Class: 114
-      Script: {instanceID: 1612}
+      Script: {instanceID: 1646}
     - Class: 114
-      Script: {instanceID: 1626}
+      Script: {instanceID: 1662}
     - Class: 114
-      Script: {instanceID: 1668}
+      Script: {instanceID: 1706}
     - Class: 114
-      Script: {instanceID: 1754}
+      Script: {instanceID: 1796}
     - Class: 114
-      Script: {instanceID: 2034}
+      Script: {instanceID: 2096}
     - Class: 114
-      Script: {instanceID: 2334}
+      Script: {instanceID: 2416}
     - Class: 114
-      Script: {instanceID: 2452}
+      Script: {instanceID: 2548}
     - Class: 114
-      Script: {instanceID: 2462}
+      Script: {instanceID: 2558}
     - Class: 114
-      Script: {instanceID: 2494}
+      Script: {instanceID: 2590}
     - Class: 114
-      Script: {instanceID: 2620}
+      Script: {instanceID: 2726}
     - Class: 114
-      Script: {instanceID: 2804}
+      Script: {instanceID: 2936}
     - Class: 114
-      Script: {instanceID: 2814}
+      Script: {instanceID: 2946}
     - Class: 114
-      Script: {instanceID: 2892}
+      Script: {instanceID: 3032}
     - Class: 114
-      Script: {instanceID: 3060}
+      Script: {instanceID: 3214}
     - Class: 114
-      Script: {instanceID: 3156}
+      Script: {instanceID: 3318}
     - Class: 114
-      Script: {instanceID: 3632}
+      Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 3750}
+      Script: {instanceID: 3964}
     - Class: 114
-      Script: {instanceID: 3766}
+      Script: {instanceID: 3980}
     - Class: 114
-      Script: {instanceID: 3864}
+      Script: {instanceID: 4092}
     - Class: 114
-      Script: {instanceID: 3896}
+      Script: {instanceID: 4128}
     - Class: 114
-      Script: {instanceID: 4136}
+      Script: {instanceID: 4394}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -441,6 +456,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: Benchmark03
+  - hash:
+      serializedVersion: 2
+      Hash: 49101319b21043357cb80c5aba043e1d
+    assemblyName: Unity.Recorder.dll
+    namespaceName: UnityEngine.Recorder
+    className: RecorderBindings
   - hash:
       serializedVersion: 2
       Hash: 748dd2a2a28da4e618912da5ac45684b
@@ -831,6 +852,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: TMPro.Examples
     className: TMP_TextInfoDebugTool
+  - hash:
+      serializedVersion: 2
+      Hash: 40586f00dc7a5e74469e68bbee2b07cb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NPC_TheBlueCube
   - hash:
       serializedVersion: 2
       Hash: 8220b46879dc5e37db1b940c938f5744

@@ -11,20 +11,29 @@ public class InventoryWindow : MonoBehaviour
     // Start is called before the first frame   update
     void Start()
     {
+        //DestroyLogos();
         Redraw();
     }
 
     // Update is called once per frame
-    void Redraw()
+    public void Redraw()
     {
         for (var i = 0; i < targetInventory.slots.Length; i++)
         {
             var item = targetInventory.items[i];
 
             var icon = new GameObject(name: "Icon");
+
             icon.transform.parent = itemsPanel;
             icon.AddComponent<Image>().sprite = item.Icon;
         }
+    }
 
+    public void DestroyLogos()
+    {
+        for (var i = 0; i < targetInventory.slots.Length+1; i++)
+        {
+            
+        }
     }
 }

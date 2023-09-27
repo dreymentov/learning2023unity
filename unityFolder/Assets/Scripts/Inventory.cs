@@ -23,7 +23,6 @@ public class Inventory : MonoBehaviour
         {
             if (slots[i] == null)
             {
-                items.Add(item);
                 slots[i] = item.icon;
                 return;
             }
