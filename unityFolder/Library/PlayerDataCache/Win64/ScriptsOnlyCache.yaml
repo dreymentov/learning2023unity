@@ -854,7 +854,7 @@ ScriptsOnlyBuild:
     className: TMP_TextInfoDebugTool
   - hash:
       serializedVersion: 2
-      Hash: 40586f00dc7a5e74469e68bbee2b07cb
+      Hash: a6a3cb9fd7e627473d46b79e12a56474
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: NPC_TheBlueCube

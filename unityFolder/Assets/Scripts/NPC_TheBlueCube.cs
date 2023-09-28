@@ -13,13 +13,15 @@ public class NPC_TheBlueCube : MonoBehaviour
 
     public string[] dialoges;
 
-    public int typingSpeed = 1;
+    public float typingSpeed = 0.1f;
 
     public int idString;
 
     private bool isDialog = false;
 
     private bool TakePoint = false;
+
+    private IEnumerator coroutine;
 
     public List<PotionData> playerItems;
 
@@ -46,7 +48,9 @@ public class NPC_TheBlueCube : MonoBehaviour
         {
             if (Input.GetKeyUp("space"))
             {
-                Type(idString);
+                coroutine = Type(idString);
+
+                StartCoroutine(coroutine);
 
                 idString++;
 
@@ -59,8 +63,12 @@ public class NPC_TheBlueCube : MonoBehaviour
         }
     }
 
+    
+
     IEnumerator Type(int index)
     {
+        index = idString;
+
         dialogueText.text = "";
         foreach (char letter in dialoges[index])
         {
