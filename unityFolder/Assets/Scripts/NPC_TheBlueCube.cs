@@ -31,6 +31,8 @@ public class NPC_TheBlueCube : MonoBehaviour
 
     public RectTransform inventoryWindow;
 
+    public Animator anim;
+
     [SerializeField] Inventory targetInventory;
     [SerializeField] RectTransform itemsPanel;
 
@@ -39,6 +41,7 @@ public class NPC_TheBlueCube : MonoBehaviour
         dialogePanel.gameObject.SetActive(false);
         nameNPCText.text = "";
         dialogueText.text = "";
+        anim.Play("Idle");
     }
 
     // Update is called once per frame
@@ -56,6 +59,7 @@ public class NPC_TheBlueCube : MonoBehaviour
 
                 if (idString > 5)
                 {
+                    anim.CrossFade("Idle", 0.5f);
                     TakePoint = true;
                     DisablePanel();
                 }
@@ -86,6 +90,9 @@ public class NPC_TheBlueCube : MonoBehaviour
             dialogePanel.gameObject.SetActive(true);
             nameNPCText.text = this.gameObject.name;
             dialogueText.text = "";
+
+            // Вместо anim.Play("Talk") юзаю это для плавного перехода!!!
+            anim.CrossFade("Talk", 0.5f);
         }
     }
 
@@ -95,6 +102,8 @@ public class NPC_TheBlueCube : MonoBehaviour
         {
             DisablePanel();
         }
+
+        anim.CrossFade("Idle", 1f);
     }
 
     private void OnTriggerStay(Collider other)
