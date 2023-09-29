@@ -51,6 +51,11 @@ public class NPC_TheBlueCube : MonoBehaviour
         {
             if (Input.GetKeyUp("space"))
             {
+                if (coroutine != null)
+                {
+                    StopCoroutine(coroutine);
+                }
+
                 coroutine = Type(idString);
 
                 StartCoroutine(coroutine);
