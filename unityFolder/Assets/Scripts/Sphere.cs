@@ -10,23 +10,20 @@ public class Sphere : MonoBehaviour
 
     public GameObject player;
 
-    public Renderer materialRD;
+    public Animator animP;
 
-    public Color v3color;
+    public bool isDialog = false;
 
 
     private void Start()
     {
         player = this.gameObject;
-        materialRD = this.GetComponent<Renderer>();
 
         var startLoading = GetComponent<SystemLoadAndSave>();
         startLoading.LoadFromJSON();
 
         player.transform.position = startLoading.playerPos3system;
         speed = startLoading.speedLS;
-        v3color = startLoading.matShpereLS;
-        materialRD.material.color = v3color;
     }
     private void Update()
     {
@@ -50,8 +47,6 @@ public class Sphere : MonoBehaviour
 
                 player.transform.position = saveLoading.playerPos3system;
                 speed = saveLoading.speedLS;
-                v3color = saveLoading.matShpereLS;
-                materialRD.material.color = v3color;
             }
             else
             {
@@ -69,16 +64,28 @@ public class Sphere : MonoBehaviour
             speed = speed + 250f;
         }
 
-        if (Input.GetKeyUp("e"))
+        if (Input.GetAxis("Horizontal") != 0 | Input.GetAxis("Vertical") != 0)
         {
-            v3color = Random.ColorHSV();
-            materialRD.material.color = v3color;
+            animP.SetBool("isRunning", true);
         }
+        else 
+        {
+            animP.SetBool("isRunning", false);
+        }
+
+        if (isDialog)
+        {
+            animP.SetBool("isTalking", true);
+        }
+        else
+        {
+            animP.SetBool("isTalking", false);
+        }
+
     }
 
     private void FixedUpdate()
     {
         rb.AddForce(Input.GetAxis("Horizontal") * speed * Time.fixedDeltaTime, 0, Input.GetAxis("Vertical") * speed * Time.fixedDeltaTime);
-        
     }
 }

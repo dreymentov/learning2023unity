@@ -103,6 +103,8 @@ public class NPC_TheBlueCube : MonoBehaviour
             DisablePanel();
         }
 
+        other.gameObject.GetComponent<Sphere>().isDialog = false;
+
         anim.CrossFade("Idle", 1f);
     }
 
@@ -113,6 +115,18 @@ public class NPC_TheBlueCube : MonoBehaviour
             playerItems = other.GetComponent<Inventory>().items;
 
             playerSlots = other.GetComponent<Inventory>().slots;
+
+            if (isDialog)
+            {
+                if (idString > 0)
+                {
+                    other.gameObject.GetComponent<Sphere>().isDialog = true;
+                }
+            }
+            else
+            {
+                other.gameObject.GetComponent<Sphere>().isDialog = false;
+            }
 
             if (TakePoint)
             {

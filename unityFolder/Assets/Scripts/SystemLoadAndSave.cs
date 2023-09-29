@@ -14,7 +14,6 @@ public class SystemLoadAndSave : MonoBehaviour
         PlayerData playerData = new PlayerData();
         playerData.playerPos3 = GetComponent<Sphere>().player.transform.position;
         playerData.speedPD = GetComponent<Sphere>().speed;
-        playerData.matSpherePD = GetComponent<Sphere>().v3color;
 
         string json = JsonUtility.ToJson(playerData, true);
         File.WriteAllText(Application.dataPath + "/PlayerDataFile.json", json);
