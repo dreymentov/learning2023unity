@@ -16,3 +16,4 @@ MonoBehaviour:
   description: Give 100 mana point
   icon: {fileID: 21300000, guid: 0347d2b54fb6e8d4687690e6fd114c50, type: 3}
   goldCost: 15
+  idPotion: 3

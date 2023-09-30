@@ -16,3 +16,4 @@ MonoBehaviour:
   description: Give 50 health point
   icon: {fileID: 21300000, guid: 95c2dd49265364a47a604290f13060fc, type: 3}
   goldCost: 10
+  idPotion: 2

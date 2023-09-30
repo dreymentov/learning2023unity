@@ -11,10 +11,7 @@ public class Inventory : MonoBehaviour
 
     private void Start()
     {
-        for (int i = 0; i < items.Count; i++)
-        {
-            AddItemToInventory(items[i]);
-        }
+        AddItemCycl();
     }
 
     public void AddItemToInventory(PotionData item)
@@ -26,6 +23,14 @@ public class Inventory : MonoBehaviour
                 slots[i] = item.icon;
                 return;
             }
+        }
+    }
+
+    public void AddItemCycl()
+    {
+        for (int i = 0; i < items.Count; i++)
+        {
+            AddItemToInventory(items[i]);
         }
     }
 }

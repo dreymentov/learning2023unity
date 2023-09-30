@@ -16,3 +16,4 @@ MonoBehaviour:
   description: Give 5 damage for 5 minut
   icon: {fileID: 21300000, guid: 2254d0d3757d5b74f82cf04ae7418a67, type: 3}
   goldCost: 30
+  idPotion: 1

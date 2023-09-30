@@ -37,6 +37,7 @@ public class Sphere : MonoBehaviour
         if (Input.GetKeyUp("k"))
         {
             saveLoading.ToSaveJSON();
+            saveLoading.Save();
         }  
         
         if (Input.GetKeyUp("l"))
@@ -44,6 +45,9 @@ public class Sphere : MonoBehaviour
             if(saveLoading.playerPos3system != null)
             {
                 saveLoading.LoadFromJSON();
+                saveLoading.Load();
+                saveLoading.itemsInUI.GetComponent<InventoryWindow>().DestroyLogos();
+                saveLoading.itemsInUI.GetComponent<InventoryWindow>().Redraw();
 
                 player.transform.position = saveLoading.playerPos3system;
                 speed = saveLoading.speedLS;

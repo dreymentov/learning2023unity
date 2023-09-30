@@ -14,6 +14,8 @@ public class PotionData : ScriptableObject
     public Sprite icon;
     [SerializeField]
     public int goldCost;
+    [SerializeField]
+    public int idPotion;
 
     public string PotionName
     {

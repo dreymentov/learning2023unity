@@ -30,10 +30,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -113,11 +111,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3940}
     - Class: 114
-      Script: {instanceID: 4326}
+      Script: {instanceID: 4328}
     - Class: 114
-      Script: {instanceID: 4696}
+      Script: {instanceID: 4698}
     - Class: 114
-      Script: {instanceID: 4774}
+      Script: {instanceID: 4776}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -198,15 +196,15 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3836}
     - Class: 114
-      Script: {instanceID: 3964}
+      Script: {instanceID: 3966}
     - Class: 114
-      Script: {instanceID: 3980}
+      Script: {instanceID: 3982}
     - Class: 114
-      Script: {instanceID: 4092}
+      Script: {instanceID: 4094}
     - Class: 114
-      Script: {instanceID: 4128}
+      Script: {instanceID: 4130}
     - Class: 114
-      Script: {instanceID: 4394}
+      Script: {instanceID: 4396}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -562,7 +560,7 @@ ScriptsOnlyBuild:
     className: Settings
   - hash:
       serializedVersion: 2
-      Hash: 1148815a5837ef303e276d06bcb99574
+      Hash: 0b305d51f9680223c61e4528a895ecbe
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PotionData
@@ -724,7 +722,7 @@ ScriptsOnlyBuild:
     className: ControlTrack
   - hash:
       serializedVersion: 2
-      Hash: 7fb7b224d57482b087d59c2f4deb6802
+      Hash: ef7f82dc7688e6ac8bbcff84adc25170
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: SystemLoadAndSave

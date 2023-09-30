@@ -11,7 +11,6 @@ public class InventoryWindow : MonoBehaviour
     // Start is called before the first frame   update
     void Start()
     {
-        //DestroyLogos();
         Redraw();
     }
 
@@ -31,9 +30,9 @@ public class InventoryWindow : MonoBehaviour
 
     public void DestroyLogos()
     {
-        for (var i = 0; i < targetInventory.slots.Length+1; i++)
+        foreach(Transform child in itemsPanel)
         {
-            
+            Destroy(child.gameObject);
         }
     }
 }
