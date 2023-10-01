@@ -1447,11 +1447,12 @@ MonoBehaviour:
   slotForSave: 0
   slotsForSave: 0
   itemsInUI: {fileID: 141177538}
-  fromPotionId0: {fileID: 11400000, guid: 428244683fc1b924ba2c9e386cd9b91f, type: 2}
-  fromPotionId1: {fileID: 11400000, guid: 2fa566ea029adfa42a2369e81b98b6cc, type: 2}
-  fromPotionId2: {fileID: 11400000, guid: 3f58568fc10aec94eb5ff7d2e5500e94, type: 2}
-  fromPotionId3: {fileID: 11400000, guid: 87a781792f5ad3546b235724c027c7c0, type: 2}
-  fromPotionId4: {fileID: 11400000, guid: 101ba0b4ece2fd64ebebe0d3ba2fe911, type: 2}
+  listPD:
+  - {fileID: 11400000, guid: 428244683fc1b924ba2c9e386cd9b91f, type: 2}
+  - {fileID: 11400000, guid: 2fa566ea029adfa42a2369e81b98b6cc, type: 2}
+  - {fileID: 11400000, guid: 3f58568fc10aec94eb5ff7d2e5500e94, type: 2}
+  - {fileID: 11400000, guid: 87a781792f5ad3546b235724c027c7c0, type: 2}
+  - {fileID: 11400000, guid: 101ba0b4ece2fd64ebebe0d3ba2fe911, type: 2}
 --- !u!114 &1922685478
 MonoBehaviour:
   m_ObjectHideFlags: 0

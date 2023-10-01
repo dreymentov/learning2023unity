@@ -44,6 +44,7 @@ public class Sphere : MonoBehaviour
         {
             if(saveLoading.playerPos3system != null)
             {
+                PlayerPrefs.GetString("json");
                 saveLoading.LoadFromJSON();
                 saveLoading.Load();
                 saveLoading.itemsInUI.GetComponent<InventoryWindow>().DestroyLogos();

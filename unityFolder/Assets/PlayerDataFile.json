@@ -1,14 +1,16 @@
 {
     "playerPos3": {
-        "x": -12.175729751586914,
-        "y": 0.39541345834732058,
-        "z": 16.9303035736084
+        "x": -11.966950416564942,
+        "y": 0.3954143524169922,
+        "z": 16.113805770874025
     },
     "speedPD": 910.0,
-    "matSpherePD": {
-        "r": 0.0,
-        "g": 0.0,
-        "b": 0.0,
-        "a": 0.0
-    }
+    "itemNames": [
+        "PotionArmor",
+        "PotionAttack",
+        "PotionHealth",
+        "PotionHealth",
+        "PotionHealth",
+        "PotionHealth"
+    ]
 }
