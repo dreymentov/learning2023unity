@@ -49,11 +49,9 @@ public class SystemLoadAndSave : MonoBehaviour
     {
         //json = File.ReadAllText(Application.dataPath + "/PlayerDataFile.json");
 
-        Debug.Log("Trying loading from PlayerPrefs");
         json = PlayerPrefs.GetString("jsonSave");
 
         PlayerData data = JsonUtility.FromJson<PlayerData>(json);
-        Debug.Log("tried");
 
         playerPos3system = data.playerPos3;
         speedLS = data.speedPD;

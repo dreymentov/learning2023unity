@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class Sphere : MonoBehaviour
 {
-    public Rigidbody rb;
-
     public float speed = 50f;
-
-    public GameObject player;
-
-    public Animator animP;
+    public float speedsCam = 50f;
+    public float speedRotate = 50f;
 
     public bool isDialog = false;
 
+    public GameObject player;
+
+    public Transform go_MovingForCamera;
+
+    public Rigidbody rb;
+
+    public Animator animP;
+
+    private float X;
+    private float eulerY;
 
     private void Start()
     {
@@ -69,7 +75,7 @@ public class Sphere : MonoBehaviour
             speed = speed + 250f;
         }
 
-        if (Input.GetAxis("Horizontal") != 0 | Input.GetAxis("Vertical") != 0)
+        if (Input.GetAxis("Horizontal1") != 0 | Input.GetAxis("Vertical") != 0)
         {
             animP.SetBool("isRunning", true);
         }
@@ -87,10 +93,29 @@ public class Sphere : MonoBehaviour
             animP.SetBool("isTalking", false);
         }
 
+        if(Input.GetKeyUp("f"))
+        {
+            if (Cursor.lockState == CursorLockMode.Locked)
+            {
+                Cursor.lockState = CursorLockMode.None;
+            }
+            else
+            {
+                Cursor.lockState = CursorLockMode.Locked;
+            }
+        }
+
+        if (Cursor.lockState == CursorLockMode.Locked)
+        {
+            X = Input.GetAxis("Mouse X") * speedsCam * Time.deltaTime;
+            eulerY = (go_MovingForCamera.transform.rotation.eulerAngles.y + X) % 360;
+            go_MovingForCamera.transform.rotation = Quaternion.Euler(0, eulerY, 0); ;
+        }
     }
 
     private void FixedUpdate()
     {
-        rb.AddForce(Input.GetAxis("Horizontal") * speed * Time.fixedDeltaTime, 0, Input.GetAxis("Vertical") * speed * Time.fixedDeltaTime);
+        rb.AddRelativeForce(Input.GetAxis("Horizontal1") * speed * Time.fixedDeltaTime, 0, Input.GetAxis("Vertical") * speed * Time.fixedDeltaTime);
+        rb.rotation = Quaternion.Euler(0, rb.transform.rotation.eulerAngles.y + (Input.GetAxis("Horizontal") * speedRotate * Time.fixedDeltaTime), 0);
     }
 }
